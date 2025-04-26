@@ -1,0 +1,22 @@
+{
+  "name": "Anki Kanji WK Hover",
+  "package": "anki_kanji_wk_hover",
+  "author": "Billy Priambodo",
+  "version": "1.0.0",
+  "homepage": "https://github.com/billymosis/Anki-Kanji-WK-Hover",
+  "conflicts": [],
+  "target": "anki21",
+  "disabled": false,
+  "mod": 0,
+  "max_point_version": 0,
+  "min_point_version": 0,
+  "branch_index": 0,
+  "update_enabled": true,
+  "description": "Interactive kanji tooltips showing meanings, readings, and mnemonics when hovering over Japanese characters. Works with WaniKani decks.",
+  "tags": ["japanese", "kanji", "wanikani", "tooltip", "hover"],
+  "config": {
+    "kanji_deck": "WaniKani Ultimate::Kanjis",
+    "kanji_filter": "my_kanji"
+  }
+}
+

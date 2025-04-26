@@ -1,0 +1,10 @@
+[project]
+name = "myaddon"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aqt[qt6]>=25.2.4",
+    "mypy>=1.15.0",
+]
