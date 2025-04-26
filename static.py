@@ -1,7 +1,4 @@
-html = """
-<div class="tooltip">
-    {text}
-    <div class="tooltip-bottom">
+html = """<div class="tooltip">{text}<div class="tooltip-bottom">
         <div class="component-list">
             <span>
                 {component_list}
@@ -22,8 +19,7 @@ html = """
             {reading_mnemonic}
         </div>
     </div>
-</div>
-"""
+</div>"""
 
 css = """
 .tooltip {
