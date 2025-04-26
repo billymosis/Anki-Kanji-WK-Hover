@@ -2,7 +2,7 @@
 
 An Anki add-on that provides interactive kanji tooltips when hovering over Japanese characters. When you hover over kanji characters in your Anki cards, you'll see helpful information including meanings, readings, mnemonics, and radicals.
 
-![Kanji Hover Example]("./images/screenshot.png")
+![Kanji Hover Example](/images/screenshot.png)
 
 ## Features
 
