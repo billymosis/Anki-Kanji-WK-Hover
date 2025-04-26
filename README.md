@@ -70,7 +70,6 @@ If the tooltips are not appearing:
 
 ## Credits
 
-- Original creator: Billy Priambodo
 - Inspired by [Anki-WaniKani-Hints](https://github.com/MattWeinberg24/Anki-WaniKani-Hints) by Matt Weinberg
 - Works with [WaniKani Ultimate 2: Japanese Kanji](https://ankiweb.net/shared/info/369908962) by WaniKani Community
 
