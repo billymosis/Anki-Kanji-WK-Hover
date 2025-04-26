@@ -182,6 +182,14 @@ def get_subject_by_slug(
     # Use the first matching note
     note = notes[0]
 
+    arr = note.tags
+    level = "0"
+    for a in arr:
+        if "level" in a:
+            split = a.split("level")
+            if len(split) > 0:
+                level = split[1]
+
     # Extract kanji data - adjust indices based on your note type
     try:
         kanji_data = {
@@ -192,6 +200,7 @@ def get_subject_by_slug(
             "meaning_mnemonic": note.fields[8] + "</br></br>" + note.fields[9],
             "reading_mnemonic": note.fields[10] + "</br></br>" + note.fields[11],
             "radicals": note.fields[4] + "|" + note.fields[6],
+            "level": level,
         }
 
         logger.debug(f"Retrieved kanji data for {slug} in {query_time:.3f}s")
@@ -247,6 +256,7 @@ def prepare_kanji_hint(text: str) -> str:
             reading_mnemonic=kanji_data["reading_mnemonic"],
             onyomi=kanji_data["onyomi"],
             kunyomi=kanji_data["kunyomi"],
+            level=kanji_data["level"],
         )
 
     process_time = time.time() - start_time

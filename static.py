@@ -1,4 +1,10 @@
 html = """<div class="tooltip">{text}<div class="tooltip-bottom">
+        <div class="between">
+            <a href="{link}" class="normal">
+                {meaning}
+            </a>
+            <span class="normal">{level}</span>
+        </div>
         <div class="component-list">
             <span>
                 {component_list}
@@ -9,9 +15,6 @@ html = """<div class="tooltip">{text}<div class="tooltip-bottom">
              <span class="green">KUN: {kunyomi}</span>
             </div>
         </div>
-        <a href="{link}" class="normal">
-            {meaning}
-        </a>
         <div class="meaning-mnemonic">
             {meaning_mnemonic}
         </div>
@@ -82,5 +85,9 @@ gap: 2;
 .flex {
 display: flex;
 gap: 2;
+}
+.between {
+display: flex;
+justify-content: space-between;
 }
 """
