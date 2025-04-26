@@ -65,10 +65,10 @@ css = """
     padding: 5px 0px;
 	margin: 5px 0px;
 }
-radical, kanji, vocabulary, reading, ja {
+.tooltip-bottom radical, kanji, vocabulary, reading, ja {
     font-weight: bold;
 }
-span {
+.tooltip-bottom span {
     font-weight: bold;
     color: red;
 }
